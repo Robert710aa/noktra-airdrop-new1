@@ -1,0 +1,16 @@
+{
+  "name": "noktra_airdrop_backend",
+  "version": "1.0.0",
+  "description": "Backend API for Noktra Airdrop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "body-parser": "^1.20.2"
+  }
+}
