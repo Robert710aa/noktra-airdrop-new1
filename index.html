@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noktra Airdrop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-link">
+    <a href="#nft-gallery">Gallery NFT Noktra</a>
+  </div>
+  <div class="background"></div>
+  <img src="logo.png" alt="Noktra Logo" class="corner-logo" />
+  <div id="nft-gallery" class="nft-gallery">
+    <h2>NFT Gallery</h2>
+    <div class="nft-items">
+      <div class="nft-card">
+        <img src="https://arweave.net/FK-p1idQ7L7JAWp0RmUWTzUXxAyMZ3J63X-0YQdCFEk" alt="NFT 1">
+        <p>Noktra Genesis #1</p>
+      </div>
+      <div class="nft-card">
+        <img src="https://arweave.net/gzH8e-VV2jwQ2x5DGVdHTrkqEYkYEdK99BbsYWeqPcg" alt="NFT 2">
+        <p>Noktra Genesis #2</p>
+      </div>
+    </div>
+  </div>
+  <div class="language-switcher">
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+    <button onclick="setLanguage('pl')">🇵🇱 Polski</button>
+  </div>
+  <div class="container">
+    <h1 data-en="Noktra Airdrop" data-pl="Airdrop Noktra">Noktra Airdrop</h1>
+    <p class="description" data-en="Noktra is a decentralized community token built on Solana. No inflation. No limits. For the people."
+       data-pl="Noktra to zdecentralizowany token społecznościowy zbudowany na Solanie. Bez dodruku. Bez barier. Dla ludzi.">
+       Noktra is a decentralized community token built on Solana. No inflation. No limits. For the people.
+    </p>
+    <div class="token-info">
+      <p><strong data-en="Token" data-pl="Token">Token</strong>: NOK</p>
+      <p><strong data-en="Total Supply" data-pl="Podaż">Total Supply</strong>: 1,000,000,000</p>
+      <p><strong data-en="Network" data-pl="Sieć">Network</strong>: Solana</p>
+      <p><strong>Token Address:</strong> <a href="https://solscan.io/token/48QzG8RhntaiPjY7z3mPqaDiK8TxDKetBKAKMZr1TbL" target="_blank">Solscan</a></p>
+    </div>
+    <form id="airdrop-form">
+      <input type="text" id="address" placeholder="Solana Address" required />
+      <input type="text" id="twitter" placeholder="Twitter Username" required />
+      <input type="text" id="telegram" placeholder="Telegram Username" required />
+      <button type="submit" data-en="Submit to Airdrop" data-pl="Zgłoś się do airdropu">Submit to Airdrop</button>
+    </form>
+    <p id="message"></p>
+    <div class="socials">
+      <a href="https://phantom.app/" target="_blank">Phantom Wallet</a> |
+      <a href="#" target="_blank">Twitter</a> |
+      <a href="#" target="_blank">Telegram</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
