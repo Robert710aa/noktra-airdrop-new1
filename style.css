@@ -168,3 +168,29 @@ button[type="submit"]:hover {
     padding: 0.2rem 0.5rem;
   }
 }
+
+/* Animacja logo */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.corner-logo {
+  animation: pulse 4s infinite;
+}
+
+/* Efekt przycisku */
+button[type="submit"]:hover {
+  background-color: #00a86b;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+/* Efekt kart NFT */
+.nft-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nft-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffeeaa;
+}

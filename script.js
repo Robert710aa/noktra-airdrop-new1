@@ -20,3 +20,16 @@ function setLanguage(lang) {
     el.textContent = el.getAttribute('data-' + lang);
   });
 }
+
+async function loadStats() {
+  try {
+    const res = await fetch('https://noktra-api.vercel.app/api/stats');
+    const data = await res.json();
+    const counter = document.getElementById('counter');
+    counter.textContent = `✅ ${data.total} users already joined the airdrop!`;
+  } catch (e) {
+    console.error('Could not load stats.');
+  }
+}
+loadStats();
+setInterval(loadStats, 20000);
